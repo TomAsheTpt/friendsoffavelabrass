@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Friends of Favela Brass | UK charity supporting music education in Rio de Janeiro</title>
+<meta name="description" content="Friends of Favela Brass is a UK registered charity (1194144) raising money for Favela Brass, a free music school for young people in Rio de Janeiro. Donate with Gift Aid.">
+<link rel="canonical" href="https://friendsoffavelabrass.org/">
+<meta property="og:title" content="Friends of Favela Brass">
+<meta property="og:description" content="A small UK charity with a simple job: buying instruments, lessons and opportunities for young musicians in Rio de Janeiro.">
+<meta property="og:image" content="https://friendsoffavelabrass.org/img/hero-baile.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%231E3A2F'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23E9B44C' font-family='Georgia'%3E%E2%99%AA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FBF7EF;
+  --paper-deep:#F3ECDD;
+  --card:#FFFFFF;
+  --ink:#1E3A2F;
+  --ink-soft:#51665C;
+  --line:#E4DBC8;
+  --accent:#D9481C;
+  --accent-dark:#B4380F;
+  --gold:#E9B44C;
+  --radius:14px;
+  --shadow:0 2px 6px rgba(30,58,47,.06),0 12px 32px rgba(30,58,47,.08);
+  --font-display:"Young Serif",Georgia,serif;
+  --font-body:"Karla",Verdana,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-body);
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.65;
+  font-size:17px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--accent-dark)}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:1.15;letter-spacing:-.01em}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(251,247,239,.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px}
+.wordmark{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink)}
+.wordmark svg{flex:0 0 auto}
+.wordmark b{font-family:var(--font-display);font-weight:400;font-size:1.05rem;line-height:1.2;display:block}
+.wordmark small{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+nav.links{display:flex;gap:26px;align-items:center}
+nav.links a{color:var(--ink);text-decoration:none;font-size:.95rem;font-weight:500}
+nav.links a:hover{color:var(--accent)}
+.btn{
+  display:inline-block;background:var(--accent);color:#fff !important;
+  padding:10px 22px;border-radius:999px;text-decoration:none;font-weight:700;
+  transition:background .2s ease,transform .2s ease,box-shadow .2s ease;
+  box-shadow:0 2px 10px rgba(217,72,28,.25);
+}
+.btn:hover{background:var(--accent-dark);transform:translateY(-1px);box-shadow:0 4px 16px rgba(217,72,28,.3)}
+.btn.ghost{background:transparent;color:var(--ink) !important;border:1.5px solid var(--ink);box-shadow:none}
+.btn.ghost:hover{background:var(--ink);color:var(--paper) !important}
+@media(max-width:760px){nav.links a:not(.btn){display:none}}
+
+/* ---------- hero ---------- */
+.hero{padding:64px 0 72px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.eyebrow{
+  display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--accent-dark);
+  border:1px solid var(--line);background:var(--card);
+  padding:6px 14px;border-radius:999px;margin-bottom:22px;
+}
+.hero h1{font-size:clamp(2rem,4.6vw,3.1rem);margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.lede{font-size:1.13rem;color:var(--ink-soft);max-width:34em;margin-bottom:30px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-photo{position:relative}
+.hero-photo img{border-radius:var(--radius);box-shadow:var(--shadow)}
+.hero-photo figcaption{
+  position:absolute;left:14px;bottom:14px;background:rgba(30,58,47,.82);color:#F3ECDD;
+  font-size:.78rem;padding:6px 13px;border-radius:999px;backdrop-filter:blur(4px);
+}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:36px}.hero{padding:44px 0 56px}}
+
+/* ---------- shared section chrome ---------- */
+section{padding:74px 0;scroll-margin-top:72px}
+.sec-head{max-width:620px;margin-bottom:44px}
+.sec-head .kicker{
+  font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--accent-dark);display:block;margin-bottom:12px;
+}
+.sec-head h2{font-size:clamp(1.6rem,3.2vw,2.2rem);margin-bottom:14px}
+.sec-head p{color:var(--ink-soft)}
+
+/* ---------- who we are ---------- */
+.who{background:var(--paper-deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.who-grid{display:grid;grid-template-columns:1fr 380px;gap:56px;align-items:start}
+.who-grid .prose p+p{margin-top:16px}
+.who-grid .prose strong{color:var(--ink)}
+.snap{
+  background:#fff;padding:14px 14px 18px;border-radius:6px;
+  box-shadow:0 3px 8px rgba(30,58,47,.12),0 16px 40px rgba(30,58,47,.14);
+  transform:rotate(2.2deg);
+}
+.snap img{border-radius:3px}
+.snap figcaption{font-size:.82rem;color:var(--ink-soft);text-align:center;padding-top:12px;font-style:italic}
+.snap-stack{display:grid;gap:0}
+.snap-stack .snap:first-child{transform:rotate(-2.4deg);z-index:1}
+.snap-stack .snap:last-child{transform:rotate(2.6deg);margin:-34px 0 0 42px;max-width:66%;justify-self:end}
+@media(max-width:860px){.who-grid{grid-template-columns:1fr}.snap-stack{max-width:360px;margin:0 auto}}
+
+/* ---------- what we fund ---------- */
+.fund-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.fund-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;box-shadow:0 1px 3px rgba(30,58,47,.05);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.fund-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.fund-card img{aspect-ratio:16/9;object-fit:cover;width:100%}
+.fund-card .pad{padding:24px 26px 28px}
+.fund-card h3{font-size:1.22rem;margin-bottom:10px}
+.fund-card p{color:var(--ink-soft);font-size:.98rem}
+.fund-card.text-only .pad{padding-top:30px}
+.fund-grid-small{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:24px}
+@media(max-width:900px){.fund-grid-small{grid-template-columns:1fr}}
+.fund-card .tag{
+  display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--accent-dark);background:#FBEDE6;border-radius:999px;padding:4px 11px;margin-bottom:14px;
+}
+@media(max-width:760px){.fund-grid{grid-template-columns:1fr}}
+
+/* ---------- favela brass ---------- */
+.fb{background:var(--ink);color:#EFE9DA}
+.fb .sec-head .kicker{color:var(--gold)}
+.fb .sec-head h2,.fb h3{color:#FBF7EF}
+.fb .sec-head p{color:#BFCDC4}
+.fb-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:34px 0 26px}
+.stat{border-top:2px solid var(--gold);padding-top:12px}
+.stat b{font-family:var(--font-display);font-size:1.9rem;display:block;color:#FBF7EF;font-weight:400}
+.stat span{font-size:.85rem;color:#BFCDC4}
+.fb .prose{color:#CDD8D0}
+.fb .prose p+p{margin-top:14px}
+.fb .prose a{color:var(--gold)}
+.video-link{display:block;position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:0 18px 48px rgba(0,0,0,.4)}
+.video-link img{transition:transform .35s ease}
+.video-link:hover img{transform:scale(1.03)}
+.video-link .play{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(to top,rgba(15,30,24,.55),rgba(15,30,24,.05));
+}
+.video-link .play span{
+  width:74px;height:74px;border-radius:50%;background:rgba(251,247,239,.94);
+  display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:var(--accent);
+  padding-left:6px;transition:transform .2s ease;
+}
+.video-link:hover .play span{transform:scale(1.08)}
+.video-cap{font-size:.85rem;color:#9FB2A7;margin-top:12px}
+.fb-photo img{border-radius:var(--radius)}
+@media(max-width:860px){.fb-grid{grid-template-columns:1fr}}
+
+/* ---------- donate ---------- */
+.donate .give-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.give-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:34px 34px 36px;box-shadow:0 1px 3px rgba(30,58,47,.05);
+}
+.give-card.primary{border:2px solid var(--accent);position:relative}
+.give-card h3{font-size:1.3rem;margin-bottom:12px}
+.give-card p{color:var(--ink-soft);font-size:.98rem;margin-bottom:18px}
+.give-card .btn{margin-top:4px}
+.bank{
+  background:var(--paper-deep);border:1px dashed var(--line);border-radius:10px;
+  padding:18px 20px;font-size:.95rem;margin-bottom:18px;
+}
+.bank dt{font-size:.7rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-soft);margin-top:10px}
+.bank dt:first-child{margin-top:0}
+.bank dd{font-weight:700;font-variant-numeric:tabular-nums}
+.giftaid{
+  margin-top:34px;background:#FDF4E3;border:1px solid #EFD9A9;border-radius:var(--radius);
+  padding:24px 28px;display:flex;gap:18px;align-items:flex-start;
+}
+.giftaid .ga-mark{
+  flex:0 0 auto;width:52px;height:52px;border-radius:50%;background:var(--gold);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-display);font-size:1.15rem;color:var(--ink);
+}
+.giftaid p{font-size:.96rem;color:#6B5A33;margin:0}
+.giftaid b{color:var(--ink)}
+@media(max-width:760px){.donate .give-grid{grid-template-columns:1fr}}
+
+/* ---------- trustees ---------- */
+.trust{background:var(--paper-deep);border-top:1px solid var(--line)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:38px}
+.trustee{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 22px 24px;text-align:center}
+.trustee .init{
+  width:56px;height:56px;border-radius:50%;margin:0 auto 14px;
+  background:var(--ink);color:var(--gold);display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-display);font-size:1.15rem;
+}
+.trustee b{display:block;font-size:1.02rem}
+.trustee span{font-size:.85rem;color:var(--ink-soft)}
+.gov{max-width:640px;color:var(--ink-soft);font-size:.97rem}
+.gov p+p{margin-top:12px}
+@media(max-width:860px){.trust-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:#9FB2A7;padding:44px 0 52px;font-size:.9rem}
+footer .frow{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+footer b{color:#EFE9DA;font-family:var(--font-display);font-weight:400;font-size:1rem;display:block;margin-bottom:6px}
+footer a{color:#D8C287}
+footer .fine{margin-top:26px;padding-top:20px;border-top:1px solid rgba(239,233,218,.14);font-size:.8rem}
+
+/* ---------- reveal animation ---------- */
+@media(prefers-reduced-motion:no-preference){
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="wordmark" href="#top" aria-label="Friends of Favela Brass, home">
+      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="#1E3A2F"/>
+        <path d="M9 26c6-1 9-3 11-7l2-5c.6-1.4 1.8-2 3-2h4" fill="none" stroke="#E9B44C" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="9.5" cy="26.5" r="3.4" fill="none" stroke="#E9B44C" stroke-width="2.2"/>
+      </svg>
+      <span>
+        <b>Friends of Favela Brass</b>
+        <small>UK registered charity 1194144</small>
+      </span>
+    </a>
+    <nav class="links">
+      <a href="#who">Who we are</a>
+      <a href="#fund">What we fund</a>
+      <a href="#school">The school</a>
+      <a href="#trustees">Trustees</a>
+      <a class="btn" href="#donate">Donate</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Registered charity in England &amp; Wales</span>
+        <h1>Music is changing young lives in Rio's favelas. <em>We help from here.</em></h1>
+        <p class="lede">Friends of Favela Brass raises money in the UK for Favela Brass, a free music school in Rio de Janeiro. Instruments, exam fees, repairs and opportunities: the practical things a brass band of nearly 200 young musicians actually needs.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="#donate">Donate with Gift Aid</a>
+          <a class="btn ghost" href="#fund">See what we fund</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/hero-baile.jpg" alt="A large group of young Favela Brass musicians in yellow and purple shirts celebrating on stage with their instruments" width="1280" height="960" fetchpriority="high">
+        <figcaption>Baile Brass, Rio de Janeiro, July 2025</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ WHO WE ARE ============ -->
+  <section class="who" id="who">
+    <div class="wrap who-grid">
+      <div>
+        <div class="sec-head">
+          <span class="kicker">Who we are</span>
+          <h2>A small charity with a simple job</h2>
+        </div>
+        <div class="prose">
+          <p><strong>Favela Brass</strong> teaches brass and percussion, free of charge, to children and teenagers in Rio de Janeiro. Founded in 2014 by the British trumpeter Tom Ashe, it has grown from a handful of students in the Pereira da Silva favela into a music school working across the city, with former students now on its teaching staff.</p>
+          <p><strong>Friends of Favela Brass</strong> is its supporters' charity in the UK. We were registered with the Charity Commission in 2021 so that donations from Britain could reach the school efficiently and grow by 25% through Gift Aid. We are run entirely by volunteer trustees; nobody here is paid a penny.</p>
+          <p>We don't run programmes ourselves. We buy the things the school needs and fund the opportunities its students earn. It is not a complicated model, but it works.</p>
+        </div>
+      </div>
+      <div class="snap-stack">
+        <figure class="snap">
+          <img src="img/watercolour.jpg" alt="Watercolour painting of a young trumpeter playing at sunset over the rooftops of a Rio favela" width="825" height="1100" loading="lazy">
+          <figcaption>A supporter's watercolour of a young Favela Brass trumpeter</figcaption>
+        </figure>
+        <figure class="snap">
+          <img src="img/girl-trombone.jpg" alt="A young Favela Brass student in a pink tutu smiling and holding a trombone, with Rio de Janeiro in the background" width="854" height="1280" loading="lazy">
+          <figcaption>Every instrument has a story</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT WE FUND ============ -->
+  <section id="fund">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">What we fund</span>
+        <h2>Where your money actually goes</h2>
+        <p>We keep our costs at zero and our purchases concrete. Recent examples, all agreed and minuted by the trustees:</p>
+      </div>
+      <div class="fund-grid">
+        <article class="fund-card">
+          <img src="img/lesson-trumpet.jpg" alt="A Favela Brass teacher demonstrating trumpet technique to young students at an evening rehearsal" width="1280" height="853" loading="lazy">
+          <div class="pad">
+            <span class="tag">Instruments</span>
+            <h3>Instruments and the unglamorous essentials</h3>
+            <p>From trumpets to this year's baritone saxophone, plus the things nobody photographs: cases, gig bags, reeds, repairs and spare parts, sourced in the UK or in Brazil, whichever is cheaper.</p>
+          </div>
+        </article>
+        <article class="fund-card">
+          <img src="img/parade-paraty.jpg" alt="Favela Brass students in purple shirts playing saxophones and trombones as they parade through the streets of Paraty" width="1280" height="855" loading="lazy">
+          <div class="pad">
+            <span class="tag">Exams</span>
+            <h3>Graded music exam fees</h3>
+            <p>Favela Brass students sit graded exams with MTB, a UK exam board, earning internationally recognised qualifications. We pay the entry fees, one student and one grade at a time.</p>
+          </div>
+        </article>
+      </div>
+      <div class="fund-grid-small">
+        <article class="fund-card text-only">
+          <div class="pad">
+            <span class="tag">Instrument donations</span>
+            <h3>Second-hand instruments, second lives</h3>
+            <p>Have a trumpet gathering dust in the loft? We take donated instruments, have them repaired here in the UK, and get them to Rio. Do <a href="mailto:sallieashe@hotmail.com">email us first</a> so we can plan the journey.</p>
+          </div>
+        </article>
+        <article class="fund-card text-only">
+          <div class="pad">
+            <span class="tag">Documentation</span>
+            <h3>Recording and film equipment</h3>
+            <p>Sound recorders, microphones and lighting so the school can document its performances properly, and so you can see where your money went.</p>
+          </div>
+        </article>
+        <article class="fund-card text-only">
+          <div class="pad">
+            <span class="tag">Exchange</span>
+            <h3>Cultural exchange</h3>
+            <p>Our founding objects include mutual learning between young musicians in Brazil and Europe. In 2026 we helped fund travel for Favela Brass's first exchange visit to Germany.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE SCHOOL ============ -->
+  <section class="fb" id="school">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">The school we support</span>
+        <h2>Favela Brass, Rio de Janeiro</h2>
+        <p>An independent Brazilian association with its own board, teachers and funding. Here is what your donations are part of:</p>
+      </div>
+      <div class="fb-grid">
+        <div>
+          <div class="stats">
+            <div class="stat"><b>~200</b><span>students learning free of charge</span></div>
+            <div class="stat"><b>5</b><span>partner state schools</span></div>
+            <div class="stat"><b>50+</b><span>performances a year</span></div>
+          </div>
+          <div class="prose">
+            <p>Students progress from beginner workshops in state schools to a structured advanced course, playing everything from street carnival to the Copacabana Palace. Several of today's teachers came up through the project themselves.</p>
+            <p>More at <a href="https://favelabrass.org" target="_blank" rel="noopener">favelabrass.org</a>.</p>
+          </div>
+        </div>
+        <div>
+          <a class="video-link" href="https://youtu.be/Vf5oCGwwxH4" target="_blank" rel="noopener" aria-label="Watch Favela Brass's Banda Preta performing live in Rio (opens YouTube)">
+            <img src="img/video-thumb.jpg" alt="Favela Brass's Banda Preta performing in front of the Museum of Tomorrow in Rio" width="1280" height="720" loading="lazy">
+            <span class="play"><span>&#9654;</span></span>
+          </a>
+          <p class="video-cap">Watch: Banda Preta live at Praça Mauá, Rio de Janeiro (YouTube)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DONATE ============ -->
+  <section class="donate" id="donate">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Donate</span>
+        <h2>Two ways to give</h2>
+        <p>Either way, every pound is spent on the school. Our running costs are nil.</p>
+      </div>
+      <div class="give-grid">
+        <div class="give-card primary">
+          <h3>Give online</h3>
+          <p>One-off or monthly, by card, through TotalGiving. Tick the Gift Aid box as you donate and HMRC adds 25% on top.</p>
+          <a class="btn" href="https://givi.ng/1194144" target="_blank" rel="noopener">Donate via TotalGiving</a>
+        </div>
+        <div class="give-card">
+          <h3>Give by bank transfer</h3>
+          <p>Best for standing orders and larger gifts: no platform fees at all.</p>
+          <dl class="bank">
+            <dt>Account name</dt><dd>Friends of Favela Brass</dd>
+            <dt>Bank</dt><dd>CAF Bank</dd>
+            <dt>Sort code</dt><dd>40-52-40</dd>
+            <dt>Account number</dt><dd>00034419</dd>
+          </dl>
+          <p>Do email <a href="mailto:sallieashe@hotmail.com">sallieashe@hotmail.com</a> when you set one up, so we can thank you and send a Gift Aid declaration.</p>
+        </div>
+      </div>
+      <div class="giftaid">
+        <span class="ga-mark" aria-hidden="true">+25%</span>
+        <p><b>Gift Aid makes your donation go further.</b> If you are a UK taxpayer, we can claim an extra 25p from HMRC for every £1 you give, at no cost to you. A £20 donation becomes £25: roughly half a graded music exam.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUSTEES ============ -->
+  <section class="trust" id="trustees">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Trustees &amp; governance</span>
+        <h2>Run by volunteers, in the open</h2>
+      </div>
+      <div class="trust-grid">
+        <div class="trustee"><span class="init">SA</span><b>Sallie Ashe</b><span>Chair</span></div>
+        <div class="trustee"><span class="init">SR</span><b>Susan Riley</b><span>Trustee</span></div>
+        <div class="trustee"><span class="init">MB</span><b>Melissa Beeko</b><span>Trustee</span></div>
+        <div class="trustee"><span class="init">JK</span><b>John Kerr</b><span>Trustee</span></div>
+      </div>
+      <div class="gov">
+        <p>Friends of Favela Brass is a charitable incorporated organisation, registered in England and Wales (number 1194144) since April 2021 and based in Doncaster. No trustee receives any payment or benefit.</p>
+        <p>Our accounts and annual returns are filed on time, every year, and are public: see our entry on the <a href="https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5173859" target="_blank" rel="noopener">Charity Commission register</a>.</p>
+        <p>Questions? Write to our Chair: <a href="mailto:sallieashe@hotmail.com">sallieashe@hotmail.com</a>.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="frow">
+      <div>
+        <b>Friends of Favela Brass</b>
+        Registered charity 1194144 (England &amp; Wales)<br>
+        18 Windsor Road, Doncaster DN2 5BT
+      </div>
+      <div>
+        <b>Links</b>
+        <a href="https://givi.ng/1194144" target="_blank" rel="noopener">Donate</a><br>
+        <a href="https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5173859" target="_blank" rel="noopener">Charity Commission register</a><br>
+        <a href="https://favelabrass.org" target="_blank" rel="noopener">favelabrass.org</a>
+      </div>
+      <div>
+        <b>Contact</b>
+        <a href="mailto:sallieashe@hotmail.com">sallieashe@hotmail.com</a>
+      </div>
+    </div>
+    <p class="fine">Photography by and courtesy of Associação Musical Favela Brass. Friends of Favela Brass provides financial and practical assistance to support the work of Associação Musical Favela Brass, Rio de Janeiro.</p>
+  </div>
+</footer>
+
+<script>
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+  document.querySelectorAll('section .wrap > *, .hero-grid > *').forEach(function(el){el.classList.add('reveal')});
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+}
+</script>
+</body>
+</html>
