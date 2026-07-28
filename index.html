@@ -118,6 +118,34 @@ section{padding:74px 0;scroll-margin-top:72px}
 .snap-stack .snap:first-child{transform:rotate(-2.4deg);z-index:1}
 .snap-stack .snap:last-child{transform:rotate(2.6deg);margin:-34px 0 0 42px;max-width:66%;justify-self:end}
 @media(max-width:860px){.who-grid{grid-template-columns:1fr}.snap-stack{max-width:360px;margin:0 auto}}
+.who-grid2{display:grid;grid-template-columns:340px 1fr;gap:64px;align-items:center;margin-top:64px}
+.who-grid2 .snap{max-width:300px;transform:rotate(-2.2deg)}
+.timeline h3{font-size:1.35rem;margin-bottom:20px}
+.tl{list-style:none;border-left:2px solid var(--gold);padding-left:26px;display:grid;gap:18px}
+.tl li{position:relative}
+.tl li::before{content:"";position:absolute;left:-33px;top:.42em;width:12px;height:12px;border-radius:50%;background:var(--accent);border:2.5px solid var(--paper-deep)}
+.tl b{font-family:var(--font-display);font-weight:400;font-size:1.05rem;display:block;color:var(--accent-dark)}
+.tl span{color:var(--ink-soft);font-size:.97rem}
+@media(max-width:860px){.who-grid2{grid-template-columns:1fr;gap:40px}.who-grid2 .snap{margin:0 auto}}
+.connect{margin-top:70px;text-align:center}
+.connect svg{width:100%;max-width:680px;height:auto}
+.connect p{color:var(--ink-soft);font-size:.95rem;max-width:44em;margin:6px auto 0}
+/* video row + quotes (school section) */
+.video-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.video-mini{display:block;position:relative;border-radius:10px;overflow:hidden}
+.video-mini img{aspect-ratio:16/9;object-fit:cover;width:100%;transition:transform .3s ease}
+.video-mini:hover img{transform:scale(1.04)}
+.video-mini .mini-cap{
+  position:absolute;inset:auto 0 0 0;padding:26px 12px 9px;font-size:.78rem;line-height:1.35;color:#F3ECDD;
+  background:linear-gradient(to top,rgba(15,30,24,.88),rgba(15,30,24,0));
+}
+.video-mini .mini-play{position:absolute;top:9px;right:9px;width:30px;height:30px;border-radius:50%;background:rgba(251,247,239,.92);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:.7rem;padding-left:2px}
+.quotes{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:54px}
+.quote{border-left:3px solid var(--gold);padding:4px 0 4px 24px}
+.quote p{font-family:var(--font-display);font-size:1.12rem;line-height:1.5;color:#F3ECDD;margin-bottom:12px}
+.quote cite{font-style:normal;font-size:.87rem;color:#9FB2A7}
+.quote cite strong{color:var(--gold);font-weight:700}
+@media(max-width:760px){.quotes{grid-template-columns:1fr}.video-row{grid-template-columns:1fr}}
 
 /* ---------- what we fund ---------- */
 .fund-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
@@ -235,8 +263,8 @@ footer .fine{margin-top:26px;padding-top:20px;border-top:1px solid rgba(239,233,
     </a>
     <nav class="links">
       <a href="#who">Who we are</a>
-      <a href="#fund">What we fund</a>
       <a href="#school">The school</a>
+      <a href="#fund">What we fund</a>
       <a href="#trustees">Trustees</a>
       <a class="btn" href="#donate">Donate</a>
     </nav>
@@ -266,27 +294,106 @@ footer .fine{margin-top:26px;padding-top:20px;border-top:1px solid rgba(239,233,
 
   <!-- ============ WHO WE ARE ============ -->
   <section class="who" id="who">
-    <div class="wrap who-grid">
-      <div>
-        <div class="sec-head">
-          <span class="kicker">Who we are</span>
-          <h2>A small charity with a simple job</h2>
+    <div class="wrap">
+      <div class="who-grid">
+        <div>
+          <div class="sec-head">
+            <span class="kicker">Who we are</span>
+            <h2>A small charity with a simple job</h2>
+          </div>
+          <div class="prose">
+            <p><strong>Favela Brass</strong> teaches brass and percussion, free of charge, to children and teenagers in Rio de Janeiro. Founded in 2014 by the British trumpeter Tom Ashe, it has grown from a handful of students in the Pereira da Silva favela into a music school working across the city, with former students now on its teaching staff.</p>
+            <p><strong>Friends of Favela Brass</strong> is its supporters' charity in the UK. We were registered with the Charity Commission in 2021 so that donations from Britain could reach the school simply and efficiently. We are run entirely by volunteer trustees; nobody here is paid a penny.</p>
+            <p>We don't run programmes ourselves. We buy the things the school needs and fund the opportunities its students earn. It is not a complicated model, but it works.</p>
+          </div>
         </div>
-        <div class="prose">
-          <p><strong>Favela Brass</strong> teaches brass and percussion, free of charge, to children and teenagers in Rio de Janeiro. Founded in 2014 by the British trumpeter Tom Ashe, it has grown from a handful of students in the Pereira da Silva favela into a music school working across the city, with former students now on its teaching staff.</p>
-          <p><strong>Friends of Favela Brass</strong> is its supporters' charity in the UK. We were registered with the Charity Commission in 2021 so that donations from Britain could reach the school simply and efficiently. We are run entirely by volunteer trustees; nobody here is paid a penny.</p>
-          <p>We don't run programmes ourselves. We buy the things the school needs and fund the opportunities its students earn. It is not a complicated model, but it works.</p>
+        <div class="snap-stack">
+          <figure class="snap">
+            <img src="img/watercolour.jpg" alt="Watercolour painting of a young trumpeter playing at sunset over the rooftops of a Rio favela" width="825" height="1100" loading="lazy">
+            <figcaption>A supporter's watercolour of a young Favela Brass trumpeter</figcaption>
+          </figure>
         </div>
       </div>
-      <div class="snap-stack">
-        <figure class="snap">
-          <img src="img/watercolour.jpg" alt="Watercolour painting of a young trumpeter playing at sunset over the rooftops of a Rio favela" width="825" height="1100" loading="lazy">
-          <figcaption>A supporter's watercolour of a young Favela Brass trumpeter</figcaption>
-        </figure>
+      <div class="who-grid2">
         <figure class="snap">
           <img src="img/girl-trombone.jpg" alt="A young Favela Brass student in a pink tutu smiling and holding a trombone, with Rio de Janeiro in the background" width="854" height="1280" loading="lazy">
           <figcaption>Every instrument has a story</figcaption>
         </figure>
+        <div class="timeline">
+          <h3>The journey so far</h3>
+          <ol class="tl">
+            <li><b>2014</b><span>British trumpeter Tom Ashe starts giving free brass lessons in the Pereira da Silva favela, Rio de Janeiro.</span></li>
+            <li><b>2021</b><span>Friends of Favela Brass is registered with the Charity Commission, so UK supporters can back the school properly.</span></li>
+            <li><b>2024</b><span>A German youth band visits Rio to play alongside the students: a first taste of international exchange.</span></li>
+            <li><b>2026</b><span>Nearly 200 students, five partner state schools, and former students on the teaching staff. The exchange returns the visit to Germany.</span></li>
+          </ol>
+        </div>
+      </div>
+      <div class="connect">
+        <svg viewBox="0 0 680 150" role="img" aria-label="Stylised map line connecting Doncaster in England with Rio de Janeiro in Brazil">
+          <path d="M60 52 C 220 -18, 460 -18, 620 52" fill="none" stroke="#D9481C" stroke-width="2.2" stroke-dasharray="1 8" stroke-linecap="round"/>
+          <circle cx="60" cy="52" r="7" fill="#1E3A2F"/>
+          <circle cx="620" cy="52" r="7" fill="#1E3A2F"/>
+          <text x="60" y="82" text-anchor="middle" font-family="Karla,Verdana,sans-serif" font-size="15" font-weight="700" fill="#1E3A2F">Doncaster</text>
+          <text x="60" y="102" text-anchor="middle" font-family="Karla,Verdana,sans-serif" font-size="12.5" fill="#51665C">England</text>
+          <text x="620" y="82" text-anchor="middle" font-family="Karla,Verdana,sans-serif" font-size="15" font-weight="700" fill="#1E3A2F">Rio de Janeiro</text>
+          <text x="620" y="102" text-anchor="middle" font-family="Karla,Verdana,sans-serif" font-size="12.5" fill="#51665C">Brazil</text>
+          <text x="340" y="22" text-anchor="middle" font-family="Georgia,serif" font-size="19" fill="#D9481C">&#9835;</text>
+        </svg>
+        <p>Nine thousand kilometres apart, one partnership: instruments, exam entries and friendship have been crossing the Atlantic since 2021.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE SCHOOL ============ -->
+  <section class="fb" id="school">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">The school we support</span>
+        <h2>Favela Brass, Rio de Janeiro</h2>
+        <p>An independent Brazilian association with its own board, teachers and funding. Here is what your donations are part of:</p>
+      </div>
+      <div class="fb-grid">
+        <div>
+          <div class="stats">
+            <div class="stat"><b>~200</b><span>students learning free of charge</span></div>
+            <div class="stat"><b>5</b><span>partner state schools</span></div>
+            <div class="stat"><b>50+</b><span>performances a year</span></div>
+          </div>
+          <div class="prose">
+            <p>Students progress from beginner workshops in state schools to a structured advanced course, playing everything from street carnival to the Copacabana Palace. Several of today's teachers came up through the project themselves.</p>
+            <p>More at <a href="https://favelabrass.org" target="_blank" rel="noopener">favelabrass.org</a>.</p>
+          </div>
+        </div>
+        <div>
+          <a class="video-link" href="https://youtu.be/Vf5oCGwwxH4" target="_blank" rel="noopener" aria-label="Watch Favela Brass performing live in Rio (opens YouTube)">
+            <img src="img/video-thumb.jpg" alt="Favela Brass students performing in front of the Museum of Tomorrow in Rio" width="1280" height="720" loading="lazy">
+            <span class="play"><span>&#9654;</span></span>
+          </a>
+          <p class="video-cap">Watch: Favela Brass live at Praça Mauá, Rio de Janeiro (YouTube)</p>
+          <div class="video-row">
+            <a class="video-mini" href="https://youtu.be/1so2WVYAAvs" target="_blank" rel="noopener">
+              <img src="https://img.youtube.com/vi/1so2WVYAAvs/hqdefault.jpg" alt="Favela Brass and the German Jugendmusikkorps playing together in Rio in 2024" loading="lazy">
+              <span class="mini-play">&#9654;</span>
+              <span class="mini-cap">The 2024 exchange: two bands, one stage</span>
+            </a>
+            <a class="video-mini" href="https://youtu.be/kTQzcW8tNJc" target="_blank" rel="noopener">
+              <img src="https://img.youtube.com/vi/kTQzcW8tNJc/hqdefault.jpg" alt="Favela Brass students in the Coração Verde e Amarelo music video" loading="lazy">
+              <span class="mini-play">&#9654;</span>
+              <span class="mini-cap">Coração Verde e Amarelo: the band's World Cup video</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="quotes">
+        <blockquote class="quote">
+          <p>"I found it so moving, and I think Favela Brass's story is only just beginning. I've been in the project since I was little and it's beautiful to see it grow."</p>
+          <cite><strong>Lúcia</strong> &middot; trumpet student, Pereira da Silva favela</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>"The first time in my life I went on stage was at Circo Voador, and I thought it was amazing! That battle of the bands with all those songs was so good!"</p>
+          <cite><strong>Arthur</strong> &middot; trumpet player</cite>
+        </blockquote>
       </div>
     </div>
   </section>
@@ -343,37 +450,6 @@ footer .fine{margin-top:26px;padding-top:20px;border-top:1px solid rgba(239,233,
     </div>
   </section>
 
-  <!-- ============ THE SCHOOL ============ -->
-  <section class="fb" id="school">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="kicker">The school we support</span>
-        <h2>Favela Brass, Rio de Janeiro</h2>
-        <p>An independent Brazilian association with its own board, teachers and funding. Here is what your donations are part of:</p>
-      </div>
-      <div class="fb-grid">
-        <div>
-          <div class="stats">
-            <div class="stat"><b>~200</b><span>students learning free of charge</span></div>
-            <div class="stat"><b>5</b><span>partner state schools</span></div>
-            <div class="stat"><b>50+</b><span>performances a year</span></div>
-          </div>
-          <div class="prose">
-            <p>Students progress from beginner workshops in state schools to a structured advanced course, playing everything from street carnival to the Copacabana Palace. Several of today's teachers came up through the project themselves.</p>
-            <p>More at <a href="https://favelabrass.org" target="_blank" rel="noopener">favelabrass.org</a>.</p>
-          </div>
-        </div>
-        <div>
-          <a class="video-link" href="https://youtu.be/Vf5oCGwwxH4" target="_blank" rel="noopener" aria-label="Watch Favela Brass performing live in Rio (opens YouTube)">
-            <img src="img/video-thumb.jpg" alt="Favela Brass students performing in front of the Museum of Tomorrow in Rio" width="1280" height="720" loading="lazy">
-            <span class="play"><span>&#9654;</span></span>
-          </a>
-          <p class="video-cap">Watch: Favela Brass live at Praça Mauá, Rio de Janeiro (YouTube)</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ============ DONATE ============ -->
   <section class="donate" id="donate">
     <div class="wrap">
@@ -385,7 +461,7 @@ footer .fine{margin-top:26px;padding-top:20px;border-top:1px solid rgba(239,233,
       <div class="give-grid">
         <div class="give-card primary">
           <h3>Give by bank transfer</h3>
-          <p>One-off gifts or standing orders, straight to the charity's account: no platform, no fees, nothing skimmed along the way.</p>
+          <p>One-off gifts or standing orders, made directly to the charity's account: no platform between us, and no fees taken along the way.</p>
           <dl class="bank">
             <dt>Account name</dt><dd>Friends of Favela Brass</dd>
             <dt>Bank</dt><dd>CAF Bank</dd>
@@ -396,7 +472,7 @@ footer .fine{margin-top:26px;padding-top:20px;border-top:1px solid rgba(239,233,
         </div>
         <div class="give-card">
           <h3>Give online</h3>
-          <p>Card donations through an online giving platform are on their way; we are choosing one that doesn't take a cut. Until then, a bank transfer gets there faster anyway.</p>
+          <p>We are in the process of setting up online card donations through a giving platform. In the meantime, bank transfers reach the charity directly and in full.</p>
           <p>Questions in the meantime? <a href="mailto:sallieashe@hotmail.com">Email our Chair</a>.</p>
         </div>
       </div>
@@ -418,6 +494,7 @@ footer .fine{margin-top:26px;padding-top:20px;border-top:1px solid rgba(239,233,
       </div>
       <div class="gov">
         <p>Friends of Favela Brass is a charitable incorporated organisation, registered in England and Wales (number 1194144) since April 2021 and based in Doncaster. No trustee receives any payment or benefit.</p>
+        <p><strong>Our charitable objects, in brief:</strong> to advance the musical education of children in Rio de Janeiro by supporting access to musical tuition and instruments, and by helping to facilitate mutual learning and cultural exchange; and to advance in life and relieve the needs of socially disadvantaged young people there. We do this by providing financial and practical assistance to Associação Musical Favela Brass. The full legal wording is on the register.</p>
         <p>Our accounts and annual returns are filed on time, every year, and are public: see our entry on the <a href="https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5173859" target="_blank" rel="noopener">Charity Commission register</a>.</p>
         <p>Questions? Write to our Chair: <a href="mailto:sallieashe@hotmail.com">sallieashe@hotmail.com</a>.</p>
       </div>
